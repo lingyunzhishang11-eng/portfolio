@@ -1,12 +1,12 @@
 'use client'
 
 const milestones = [
-  { year: '2019', title: '入行测试', desc: '从功能测试开始，理解质量保障的核心' },
-  { year: '2020', title: '自动化转型', desc: '学习 Python + Selenium，搭建第一个自动化框架' },
-  { year: '2021', title: 'CI/CD 实践', desc: '引入 Jenkins，实现测试左移' },
-  { year: '2022', title: '平台化建设', desc: '主导搭建团队级自动化测试平台' },
-  { year: '2023', title: '质量效能', desc: '关注研发效能，推动质量内建' },
-  { year: '2024', title: '持续精进', desc: '探索 AI 测试、混沌工程等前沿领域' },
+  { year: '2024.02', title: '入行测试', desc: '从功能测试开始，学习质量保障的核心方法论' },
+  { year: '2024.06', title: '自动化转型', desc: '掌握 Python + pytest + Playwright，搭建第一个自动化框架' },
+  { year: '2024.10', title: 'CI/CD 实践', desc: '引入 GitHub Actions，实现测试左移与持续集成' },
+  { year: '2025.03', title: '平台化建设', desc: '主导搭建团队级自动化测试平台，提升整体测试效能' },
+  { year: '2025.08', title: '质量效能', desc: '关注研发效能度量，推动质量内建与测试左移' },
+  { year: '2026.01', title: '字节跳动 Pico', desc: '加入字节跳动，负责 Pico 项目测试开发工作' },
 ]
 
 export default function About() {

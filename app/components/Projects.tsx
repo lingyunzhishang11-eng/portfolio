@@ -1,12 +1,12 @@
 'use client'
 
-import { Github, ExternalLink, Play } from 'lucide-react'
+import { Github } from 'lucide-react'
 
 const projects = [
   {
     title: 'QA Automation Platform',
     subtitle: '自动化测试平台',
-    description: '从 0 到 1 搭建的完整自动化测试平台，支持接口测试、UI 测试、性能测试，集成 CI/CD 流水线，自动生成 Allure 报告。',
+    description: '从 0 到 1 搭建的完整自动化测试平台，支持接口测试、UI 测试，集成 CI/CD 流水线，自动生成 Allure 报告。',
     tech: ['Python', 'pytest', 'Playwright', 'Allure', 'Docker', 'GitHub Actions'],
     highlights: [
       'Page Object 模式，代码可维护性强',
@@ -14,8 +14,7 @@ const projects = [
       'GitHub Actions 自动执行测试',
       'Docker 化部署，环境隔离',
     ],
-    github: 'https://github.com/your-github/qa-automation-platform',
-    demo: 'https://your-github.github.io/qa-automation-platform',
+    github: 'https://github.com/lingyunzhishang-eng/qa-automation-platform',
   },
   {
     title: 'API Testing Framework',
@@ -28,8 +27,7 @@ const projects = [
       '数据驱动测试，覆盖多场景',
       '详细的日志和错误追踪',
     ],
-    github: 'https://github.com/your-github/api-testing-framework',
-    demo: null,
+    github: 'https://github.com/lingyunzhishang-eng/api-testing-framework',
   },
   {
     title: 'Performance Test Suite',
@@ -42,8 +40,7 @@ const projects = [
       '自定义测试场景和权重',
       '自动生成性能测试报告',
     ],
-    github: 'https://github.com/your-github/perf-test-suite',
-    demo: null,
+    github: 'https://github.com/lingyunzhishang-eng/perf-test-suite',
   },
 ]
 
@@ -59,7 +56,7 @@ export default function Projects() {
         </div>
 
         <div className="space-y-12">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.title}
               className="card-hover bg-secondary/50 rounded-xl border border-white/5 overflow-hidden"
@@ -103,22 +100,11 @@ export default function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg transition-all text-sm"
+                      className="flex items-center gap-2 px-6 py-3 bg-primary text-secondary rounded-lg hover:bg-primary/90 transition-all font-medium"
                     >
-                      <Github size={16} />
-                      源码
+                      <Github size={18} />
+                      查看源码
                     </a>
-                    {project.demo && (
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-primary text-secondary rounded-lg hover:bg-primary/90 transition-all text-sm font-medium"
-                      >
-                        <ExternalLink size={16} />
-                        在线演示
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>

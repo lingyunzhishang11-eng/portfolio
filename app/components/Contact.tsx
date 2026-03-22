@@ -1,31 +1,19 @@
 'use client'
 
-import { Mail, Github, Linkedin, MessageCircle } from 'lucide-react'
+import { Mail, Github } from 'lucide-react'
 
 const contactMethods = [
   {
     icon: Mail,
     title: '邮箱',
-    value: 'your.email@example.com',
-    href: 'mailto:your.email@example.com',
+    value: '2874009549@qq.com',
+    href: 'mailto:2874009549@qq.com',
   },
   {
     icon: Github,
     title: 'GitHub',
-    value: '@your-github',
-    href: 'https://github.com/your-github',
-  },
-  {
-    icon: Linkedin,
-    title: 'LinkedIn',
-    value: 'linkedin.com/in/your-profile',
-    href: 'https://linkedin.com/in/your-profile',
-  },
-  {
-    icon: MessageCircle,
-    title: '微信',
-    value: '扫码添加',
-    href: '#wechat',
+    value: '@lingyunzhishang-eng',
+    href: 'https://github.com/lingyunzhishang-eng',
   },
 ]
 
@@ -40,18 +28,20 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
           {contactMethods.map((method) => (
             <a
               key={method.title}
               href={method.href}
-              className="card-hover bg-secondary/50 p-6 rounded-xl border border-white/5 text-center group"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card-hover bg-secondary/50 p-8 rounded-xl border border-white/5 text-center group"
             >
-              <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <method.icon className="text-primary" size={24} />
+              <div className="w-14 h-14 mx-auto mb-4 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                <method.icon className="text-primary" size={28} />
               </div>
-              <h3 className="font-semibold mb-1">{method.title}</h3>
-              <p className="text-gray-400 text-sm">{method.value}</p>
+              <h3 className="font-semibold text-lg mb-2">{method.title}</h3>
+              <p className="text-gray-400">{method.value}</p>
             </a>
           ))}
         </div>
@@ -59,7 +49,7 @@ export default function Contact() {
         {/* Footer */}
         <footer className="mt-24 pt-12 border-t border-white/10 text-center">
           <p className="text-gray-500 text-sm">
-            © 2024 凌云之上. Built with Next.js & Tailwind CSS.
+            © 2024-2026 凌云之上. Built with Next.js & Tailwind CSS.
           </p>
           <p className="text-gray-600 text-xs mt-2">
             让软件质量从"靠人盯"变成"靠系统跑"

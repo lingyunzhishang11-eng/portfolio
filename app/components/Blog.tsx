@@ -2,6 +2,7 @@
 
 import { Calendar, Clock, ArrowRight } from 'lucide-react'
 
+// 博客文章 - 发布到掘金后替换 url
 const blogPosts = [
   {
     title: '从 0 到 1 搭建自动化测试平台',
@@ -9,7 +10,8 @@ const blogPosts = [
     date: '2024-03-15',
     readTime: '15 分钟',
     tags: ['自动化测试', 'pytest', 'CI/CD'],
-    slug: 'qa-automation-platform',
+    // 发布后替换为掘金文章链接
+    url: 'https://juejin.cn/post/xxxxx',
   },
   {
     title: 'Page Object 模式实战：让 UI 测试代码不再是一坨浆糊',
@@ -17,7 +19,8 @@ const blogPosts = [
     date: '2024-03-10',
     readTime: '12 分钟',
     tags: ['UI 测试', 'Playwright', '设计模式'],
-    slug: 'page-object-pattern',
+    // 发布后替换为掘金文章链接
+    url: 'https://juejin.cn/post/xxxxx',
   },
   {
     title: 'Allure 报告美化指南：让测试报告成为团队的沟通语言',
@@ -25,7 +28,8 @@ const blogPosts = [
     date: '2024-03-05',
     readTime: '10 分钟',
     tags: ['测试报告', 'Allure', '最佳实践'],
-    slug: 'allure-report-guide',
+    // 发布后替换为掘金文章链接
+    url: 'https://juejin.cn/post/xxxxx',
   },
 ]
 
@@ -43,7 +47,7 @@ export default function Blog() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogPosts.map((post) => (
             <article
-              key={post.slug}
+              key={post.title}
               className="card-hover bg-secondary/50 rounded-xl border border-white/5 overflow-hidden flex flex-col"
             >
               <div className="p-6 flex-1">
@@ -80,27 +84,20 @@ export default function Blog() {
 
               {/* Read More */}
               <div className="px-6 pb-6">
-                <a
-                  href={`#blog/${post.slug}`}
-                  className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm font-medium"
-                >
-                  阅读全文
+                <span className="inline-flex items-center gap-2 text-gray-500 text-sm">
+                  即将发布...
                   <ArrowRight size={16} />
-                </a>
+                </span>
               </div>
             </article>
           ))}
         </div>
 
-        {/* View All Button */}
-        <div className="text-center mt-12">
-          <a
-            href="#blog/all"
-            className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 rounded-lg hover:bg-white/5 transition-all"
-          >
-            查看全部文章
-            <ArrowRight size={16} />
-          </a>
+        {/* Tips */}
+        <div className="text-center mt-12 p-6 bg-white/5 rounded-lg">
+          <p className="text-gray-400 text-sm">
+            💡 博客文章正在整理中，敬请期待...
+          </p>
         </div>
       </div>
     </section>

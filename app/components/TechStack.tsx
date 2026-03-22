@@ -6,37 +6,37 @@ const techCategories = [
   {
     name: '测试框架',
     items: [
-      { name: 'pytest', level: 95, desc: 'Python 测试框架首选' },
-      { name: 'Playwright', level: 90, desc: '现代 UI 自动化工具' },
-      { name: 'Selenium', level: 85, desc: '经典的 Web 测试框架' },
-      { name: 'JUnit/TestNG', level: 80, desc: 'Java 测试框架' },
+      { name: 'pytest', level: 95, desc: 'Python 测试框架首选，精通 fixtures、参数化、插件开发' },
+      { name: 'Playwright', level: 90, desc: '现代 UI 自动化工具，精通 Page Object 模式' },
+      { name: 'unittest', level: 85, desc: 'Python 标准库测试框架' },
+      { name: 'Allure', level: 92, desc: '测试报告与可视化，自定义报告美化' },
     ],
   },
   {
     name: '编程语言',
     items: [
-      { name: 'Python', level: 95, desc: '自动化测试主力语言' },
-      { name: 'Java', level: 80, desc: '企业级测试开发' },
-      { name: 'JavaScript/TypeScript', level: 75, desc: '前端测试与工具开发' },
-      { name: 'Go', level: 60, desc: '性能测试工具开发' },
+      { name: 'Python', level: 95, desc: '主力语言，自动化测试、工具开发、数据处理' },
+      { name: 'JavaScript/TypeScript', level: 75, desc: '前端测试、Playwright 脚本' },
+      { name: 'Shell/Bash', level: 70, desc: '脚本编写、CI/CD 配置' },
+      { name: 'SQL', level: 80, desc: '数据库测试、数据验证' },
     ],
   },
   {
     name: 'DevOps & CI/CD',
     items: [
-      { name: 'Docker', level: 90, desc: '容器化测试环境' },
-      { name: 'Jenkins', level: 85, desc: '持续集成平台' },
-      { name: 'GitHub Actions', level: 88, desc: '现代化 CI/CD' },
-      { name: 'Kubernetes', level: 70, desc: '容器编排' },
+      { name: 'Docker', level: 88, desc: '容器化测试环境' },
+      { name: 'GitHub Actions', level: 90, desc: 'CI/CD 流水线配置' },
+      { name: 'Jenkins', level: 82, desc: '企业级持续集成平台' },
+      { name: 'Git', level: 90, desc: '版本控制与协作' },
     ],
   },
   {
     name: '测试工具',
     items: [
-      { name: 'Allure', level: 92, desc: '测试报告与可视化' },
-      { name: 'JMeter', level: 85, desc: '性能测试工具' },
-      { name: 'Postman', level: 90, desc: 'API 测试与调试' },
-      { name: 'Charles/Fiddler', level: 80, desc: '网络抓包分析' },
+      { name: 'Postman', level: 88, desc: 'API 测试与调试' },
+      { name: 'JMeter', level: 80, desc: '性能测试工具' },
+      { name: 'Charles/Fiddler', level: 75, desc: '网络抓包分析' },
+      { name: 'Jira', level: 85, desc: '需求管理与缺陷追踪' },
     ],
   },
 ]
@@ -50,7 +50,7 @@ export default function TechStack() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">技术栈</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            工具只是手段，解决问题才是目的。持续学习，保持对新技术的敏感度。
+            以 Python 为核心，持续学习，保持对新技术的敏感度。工具只是手段，解决问题才是目的。
           </p>
         </div>
 
